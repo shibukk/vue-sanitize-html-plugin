@@ -3,14 +3,20 @@
   "version": "1.0.0",
   "description": "A sanitizeHtml wrapper for Vue",
   "author": "shibuya kazuaki <hogemail009@gmail.com>",
-  "private": true,
+  "main": "dist/vue-sanitize-html-plugin.js",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shibukk/vue-sanitize-html-plugin"
+  },
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "test": "npm run unit",
     "lint": "eslint --fix --ext .js,.vue src test/unit",
-    "build": "node build/build.js"
+    "build": "webpack"
   },
   "dependencies": {
     "sanitize-html": "^1.18.2",
@@ -58,7 +64,7 @@
     "rimraf": "^2.6.0",
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
-    "uglifyjs-webpack-plugin": "^1.1.1",
+    "uglifyjs-webpack-plugin": "^1.2.5",
     "url-loader": "^1.0.1",
     "vue-jest": "^1.0.2",
     "vue-loader": "^13.3.0",
