@@ -1,6 +1,6 @@
 {
   "name": "vue-sanitize-html-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A sanitizeHtml wrapper for Vue",
   "author": "Kazuaki Shibuya <hogemail009@gmail.com>",
   "main": "dist/vue-sanitize-html-plugin.js",
